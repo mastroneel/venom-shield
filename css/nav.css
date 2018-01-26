@@ -12,8 +12,8 @@
     height: 45px;
     display: block;
     margin: 0 auto;
-    background-color: #101010;
-    border: 1px solid #101010;
+    background-color: #000;
+    border: 1px solid #000;
     border-radius: 40px;
     padding-right: 10px; }
     .nav-desktop .header .searchbar img {
@@ -33,9 +33,9 @@
     margin-right: 10px;
     margin-top: -8px; }
   .nav-desktop li:nth-child(odd) {
-    background-color: #1c1c1c; }
+    background-color: #0a0a0a; }
   .nav-desktop li:nth-child(even) {
-    background-color: #101010; }
+    background-color: #000; }
 
 @media (max-height: 580px) {
   .nav-desktop li {
@@ -58,7 +58,7 @@
   top: 0;
   left: 0;
   transition: 0.5s;
-  background-color: #1c1c1c; }
+  background-color: #0a0a0a; }
   .sidenav .nav-mobile {
     padding-top: 8vh; }
     .sidenav .nav-mobile li {
@@ -72,9 +72,9 @@
         margin-right: 10px;
         margin-top: -8px; }
       .sidenav .nav-mobile li:nth-child(odd) {
-        background-color: #1c1c1c; }
+        background-color: #0a0a0a; }
       .sidenav .nav-mobile li:nth-child(even) {
-        background-color: #101010; }
+        background-color: #000; }
 
 .sidenav .closebtn {
   position: absolute;
@@ -109,7 +109,7 @@
   .menu-open .hamburger {
     width: 35px;
     height: 5px;
-    background-color: #1c1c1c;
+    background-color: #0a0a0a;
     margin: 6px 0; }
 
 /*# sourceMappingURL=nav.css.map */
