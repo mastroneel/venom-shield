@@ -11,3 +11,33 @@
   font-family: 'Futura';
   src: url("../fonts/futura-medium.ttf");
 }
+
+// general styles
+body {
+  color: $white;
+  font-family: 'Avenir Light', Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Futura', Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  -webkit-padding-start: 0;
+}
+
+.col-sm-4, .col-lg-3 {
+  padding: 0;
+  margin: 0;
+}
+
+// import sections
+@import 'nav';
