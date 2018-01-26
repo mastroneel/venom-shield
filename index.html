@@ -9,8 +9,51 @@
   </head>
   <body>
     <div class="page-container">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul class="nav-mobile">
+        <li>
+          <img src="img/scan.png">
+          Scan Computer
+        </li>
+        <li>
+          <img src="img/report.png">
+          View Reports
+        </li>
+        <li>
+          <img src="img/bell.png">
+          Alerts
+        </li>
+        <li>
+          <img src="img/network.png">
+          Network
+        </li>
+        <li>
+          <img src="img/sync.png">
+          Update Data
+        </li>
+        <li>
+          <img src="img/gear.png">
+          Settings
+        </li>
+      </ul>
+    </div>
+
+  <!-- open side nav button -->
+  <span class="menu-open" onclick="openNav()">
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+  </span>
+
+  <div id="main">
+
+
+      <!-- mobile nav -->
+
       <div class="row">
-        <div class="col-xs-0 col-sm-4 col-lg-3">
+        <!-- desktop nav -->
+        <div class="col-md-4 col-lg-3">
           <ul class="nav-desktop">
             <li class="header">
               <h1>Venom Shield</h1>
@@ -45,7 +88,37 @@
             </li>
           </ul>
         </div>
+        <div class="col-sm-12 col-md-8 col-lg-9 main-screen">
+          <div class="arrow-left"></div>
+          <div class="text-container">
+            <h2>
+              <img src="img/check.png">
+              Your computer is safe.
+            </h2>
+            <ul>
+              <li>No viruses or malware detected</li>
+              <li>No problems detected on your network</li>
+            </ul>
+          </div>
+          <button type="button" name="button" href="#">Scan Again</button>
+        </div>
       </div>
     </div>
+    </div>
+
+
+    <script>
+      // Set the width of the side navigation to 250px and the left margin of the page content to 250px
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      // Set the width of the side navigation to 0 and the left margin of the page content to 0
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
   </body>
 </html>
